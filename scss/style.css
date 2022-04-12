@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  /* fix height to 100% for IE */
+  /*overflow:hidden; /*get rid of scroll bars in IE */
+  overflow-x: hidden;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100%;
+  width: 8rem;
+  max-width: 8rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(29, 29, 29, 0.8);
+  -webkit-filter: blur(0.3px);
+          filter: blur(0.3px);
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  -webkit-transition: var(--transition-default);
+  transition: var(--transition-default);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.sidebar-top img {
+  width: 50px;
+  height: 50px;
+  left: 25px;
+  top: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar-sociais {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.46rem;
+}
+
+.sidebar-sociais img {
+  width: 32px;
+  height: 32px;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+.sidebar-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 18rem;
+}
+
+.sidebar-bottom img {
+  cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--secondary-light-color);
+  border-radius: 10px;
+  border: 0.1rem solid #333;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:active {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.sidebar .rotate i:last-child {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.sidenav-responsiveness {
+  width: 5rem !important;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  background-image: url("../assets/spider-man-miles.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.main .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  background: rgba(29, 29, 29, 0.5);
+  -webkit-filter: blur(0.1px);
+          filter: blur(0.1px);
+}
+
+.main .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .header-menu p {
+  font-size: 2rem;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+.main .header-menu p:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.main .header img {
+  cursor: pointer;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 12, 16, 0.6)), color-stop(52.08%, rgba(11, 12, 16, 0.4)), to(rgba(12, 12, 16, 0.6)));
+  background: linear-gradient(90deg, rgba(11, 12, 16, 0.6) 0%, rgba(11, 12, 16, 0.4) 52.08%, rgba(12, 12, 16, 0.6) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.main-container .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .content .title-img {
+  width: 50rem;
+}
+
+.main-container .content .title .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1d1d1d;
+  border: 2px solid #ec111a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  padding: 1.5rem 6rem;
+  border-radius: 2rem 0rem 0rem 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
