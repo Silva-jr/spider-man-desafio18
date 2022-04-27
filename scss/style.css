@@ -25,7 +25,21 @@ a {
   cursor: pointer;
 }
 
-.sidebar {
+.sidenav-responsiveness {
+  width: 5rem !important;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  background-image: url("../assets/spider-man-miles.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.main .sidebar {
   height: 100%;
   width: 8rem;
   max-width: 8rem;
@@ -45,7 +59,7 @@ a {
           justify-content: space-between;
 }
 
-.sidebar-top {
+.main .sidebar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +73,7 @@ a {
   padding: 1rem;
 }
 
-.sidebar-top img {
+.main .sidebar-top img {
   width: 50px;
   height: 50px;
   left: 25px;
@@ -68,7 +82,7 @@ a {
   cursor: pointer;
 }
 
-.sidebar-sociais {
+.main .sidebar-sociais {
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,14 +97,14 @@ a {
   margin-top: 4.46rem;
 }
 
-.sidebar-sociais img {
+.main .sidebar-sociais img {
   width: 32px;
   height: 32px;
   margin-top: 6rem;
   cursor: pointer;
 }
 
-.sidebar-bottom {
+.main .sidebar-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,54 +118,40 @@ a {
   margin-top: 18rem;
 }
 
-.sidebar-bottom img {
+.main .sidebar-bottom img {
   cursor: pointer;
 }
 
-.sidebar::-webkit-scrollbar {
+.main .sidebar::-webkit-scrollbar {
   width: 10px;
 }
 
-.sidebar::-webkit-scrollbar-track {
+.main .sidebar::-webkit-scrollbar-track {
   background: var(--secondary-color);
   border-radius: 10px;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
+.main .sidebar::-webkit-scrollbar-thumb {
   background: var(--secondary-light-color);
   border-radius: 10px;
   border: 0.1rem solid #333;
 }
 
-.sidebar::-webkit-scrollbar-thumb:hover {
+.main .sidebar::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
   border-radius: 10px;
 }
 
-.sidebar::-webkit-scrollbar-thumb:active {
+.main .sidebar::-webkit-scrollbar-thumb:active {
   background: var(--primary-color);
   border-radius: 10px;
 }
 
-.sidebar .rotate i:last-child {
+.main .sidebar .rotate i:last-child {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-
-.sidenav-responsiveness {
-  width: 5rem !important;
-}
-
-.main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  color: #fff;
-  background-image: url("../assets/spider-man-miles.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .main .header {
